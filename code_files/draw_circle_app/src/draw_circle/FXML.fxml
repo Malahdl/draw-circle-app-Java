@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="draw_circle.Draw_circle">
+   <children>
+      <Pane fx:id="panel" onMouseClicked="#onMouse" prefHeight="400.0" prefWidth="342.0" />
+      <Label layoutX="433.0" layoutY="76.0" text="X:" />
+      <Label layoutX="599.0" layoutY="76.0" text="Y:" />
+      <TextField layoutX="455.0" layoutY="72.0" prefHeight="25.0" prefWidth="98.0" fx:id="xAxis" />
+      <TextField fx:id="yAxis" layoutX="626.0" layoutY="72.0" prefHeight="25.0" prefWidth="98.0" />
+      <Slider fx:id="rad" layoutX="502.0" layoutY="156.0" max="150.0" prefHeight="38.0" prefWidth="214.0" showTickLabels="true" showTickMarks="true" value="25.0" />
+      <Label layoutX="455.0" layoutY="155.0" prefHeight="17.0" prefWidth="40.0" text="Radius:" />
+      <Button fx:id="drw" layoutX="478.0" layoutY="220.0" mnemonicParsing="false" onAction="#onDraw" prefHeight="25.0" prefWidth="90.0" text="Draw" />
+      <Button fx:id="clr" layoutX="593.0" layoutY="220.0" mnemonicParsing="false" onAction="#onClear" prefHeight="25.0" prefWidth="98.0" text="Clear" />
+      <Label layoutX="441.0" layoutY="301.0" text="Background collor: " />
+      <ComboBox fx:id="combo" layoutX="553.0" layoutY="297.0" onAction="#onSelect" prefHeight="25.0" prefWidth="175.0" />
+   </children>
+</AnchorPane>
