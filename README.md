@@ -1,7 +1,7 @@
 # Welcome to the Draw-Circle app!
 
 # Description:
-This is a simple JavaFX app where you can draw a circle of any size any position of the app frame.
+This is a simple JavaFX app where you can draw a circle of any size at any position of the app frame.
 
 # Features:
 1. You can draw a circle of any size by controlling the radius.
